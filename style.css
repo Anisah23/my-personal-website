@@ -1,3 +1,98 @@
-body {
-  background: blue;
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  
+  overflow: hidden; 
+}
+
+
+.split-left{
+  height: 100%;
+  width: 40%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  padding-top: 20px;
+  left: 0;
+  background-color:black;
+  
+}
+.split-right{
+  height: 100%;
+  width: 60%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  padding-top: 20px;
+  right: 0;
+  background-color: black;
+ overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+     
+}
+.page {
+  height: 100vh;
+  padding: 60px 40px;
+  background-color:black;
+  color: white;
+  scroll-snap-align: start;
+  border-bottom: 1px solid black;
+}
+
+
+#identity{
+    min-height: 93vh;
+    background-image: url(./images/philipp-katzenberger-iIJrUoeRoCQ-unsplash.jpg);
+    background-repeat: no-repeat;
+background-position: center center;
+   background-size: cover;
+   border-radius: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.home-content {
+   color: white;
+   font-style: italic;
+    text-align: center;
+    margin-top: 100px;
+}
+p{
+  color: white;
+  font-display: block;
+}
+#image{
+    min-height: 10vh;
+    min-width: 10vh;
+      background-image: url(./images/dana-al-hawitey-wdQhBmMGmq8-unsplash.jpg);
+    background-repeat: no-repeat;background-position: center center;
+   background-size: cover;
+   border-radius: 100px;
+   margin-left: 311px;
+   margin-right: 350px;
+    filter: grayscale(50%) brightness(80%) opacity(0.8);
+}
+button {
+  background-color: black; 
+  color: #fff;             
+  border: 2px solid #444;  
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 50px;
+}
+
+button:hover {
+  background-color: #333;
+  border-color: #666;
+  color: #ddd;
+  transform: scale(1.05);
+}
+#about{
+    color: white;
 }
