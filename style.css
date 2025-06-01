@@ -59,7 +59,7 @@ background-position: center center;
     text-align: center;
     margin-top: 100px;
 }
-p{
+.home-content p{
   color: white;
   font-display: block;
 }
@@ -95,4 +95,17 @@ button:hover {
 }
 #about{
     color: white;
+    text-align: center;
+    font-style: italic;
+    
+}
+#about p{
+    font-style: italic;
+    font-display: block;
+}
+#about a{
+    color: white;
+   float: left;
+   margin-top: 120px;
+    
 }
