@@ -76,12 +76,13 @@ background-position: center center;
    margin-left: 311px;
    margin-right: 350px;
     filter: grayscale(50%) brightness(80%) opacity(0.8);
-     box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+     box-shadow: 0 0 20px #00ffff;
 }
 button {
   background-color: black; 
   color: #fff;             
-  border: 2px solid #444;  
+  border: 2px solid #444; 
+  box-shadow: 0 0 20px #00ffff; 
   padding: 12px 24px;
   border-radius: 8px;
   font-size: 16px;
@@ -117,7 +118,7 @@ button:hover {
     
 }
 #about a:hover {
-  color: #fff;
+  color:  #00ffff;;
   text-decoration: underline;
 }
 #projects {
@@ -195,6 +196,31 @@ button:hover {
     text-decoration: none;
 }
 #contactlink a:hover {
-  color: #fff;
+  color: #00ffff;
   text-decoration: underline;
+}
+#contact {
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+}
+
+#contact .fab {
+  padding: 15px;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#contact .fab:hover {
+  background-color: #00ffff;
+  color: black;
+  transform: scale(1.1);
 }

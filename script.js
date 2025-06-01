@@ -14,4 +14,3 @@ img.addEventListener("mouseenter", () => {
 img.addEventListener("mouseleave", () => {
   img.style.filter = "brightness(0.8)";
 });
-
